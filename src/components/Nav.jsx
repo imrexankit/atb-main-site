@@ -6,6 +6,7 @@ const navLinks = [
   { label: "What We Automate", href: "#automate" },
   { label: "How It Works", href: "#process" },
   { label: "About", href: "#about" },
+  { label: "Case Studies", href: "/case-studies", isRoute: true },
 ];
 
 export default function Nav() {
@@ -88,24 +89,37 @@ export default function Nav() {
         {/* Desktop links */}
         {!isMobile && (
           <div style={{ display: "flex", alignItems: "center", gap: 32 }}>
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                style={{
-                  color: COLORS.textMuted,
-                  textDecoration: "none",
-                  fontSize: 14,
-                  fontWeight: 500,
-                  transition: "color 0.2s",
-                  letterSpacing: "0.01em",
-                }}
-                onMouseEnter={(e) => (e.target.style.color = COLORS.accent)}
-                onMouseLeave={(e) => (e.target.style.color = COLORS.textMuted)}
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) => {
+              const linkStyle = {
+                color: COLORS.textMuted,
+                textDecoration: "none",
+                fontSize: 14,
+                fontWeight: 500,
+                transition: "color 0.2s",
+                letterSpacing: "0.01em",
+              };
+              return link.isRoute ? (
+                <Link
+                  key={link.label}
+                  to={link.href}
+                  style={linkStyle}
+                  onMouseEnter={(e) => (e.target.style.color = COLORS.accent)}
+                  onMouseLeave={(e) => (e.target.style.color = COLORS.textMuted)}
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  style={linkStyle}
+                  onMouseEnter={(e) => (e.target.style.color = COLORS.accent)}
+                  onMouseLeave={(e) => (e.target.style.color = COLORS.textMuted)}
+                >
+                  {link.label}
+                </a>
+              );
+            })}
             <a
               href="https://audit.automatetheboring.agency/" target="_blank" rel="noopener noreferrer"
               style={{
@@ -222,27 +236,41 @@ export default function Nav() {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </button>
-            {navLinks.map((link, i) => (
-              <a
-                key={link.label}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                style={{
-                  color: COLORS.textMuted,
-                  textDecoration: "none",
-                  fontSize: 18,
-                  fontWeight: 500,
-                  padding: "14px 0",
-                  borderBottom: i < navLinks.length - 1 ? `1px solid ${COLORS.border}` : "none",
-                  fontFamily: FONTS.body,
-                  transition: "color 0.2s",
-                }}
-                onMouseEnter={(e) => (e.target.style.color = COLORS.accent)}
-                onMouseLeave={(e) => (e.target.style.color = COLORS.textMuted)}
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link, i) => {
+              const mobileLinkStyle = {
+                color: COLORS.textMuted,
+                textDecoration: "none",
+                fontSize: 18,
+                fontWeight: 500,
+                padding: "14px 0",
+                borderBottom: i < navLinks.length - 1 ? `1px solid ${COLORS.border}` : "none",
+                fontFamily: FONTS.body,
+                transition: "color 0.2s",
+              };
+              return link.isRoute ? (
+                <Link
+                  key={link.label}
+                  to={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  style={mobileLinkStyle}
+                  onMouseEnter={(e) => (e.target.style.color = COLORS.accent)}
+                  onMouseLeave={(e) => (e.target.style.color = COLORS.textMuted)}
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  style={mobileLinkStyle}
+                  onMouseEnter={(e) => (e.target.style.color = COLORS.accent)}
+                  onMouseLeave={(e) => (e.target.style.color = COLORS.textMuted)}
+                >
+                  {link.label}
+                </a>
+              );
+            })}
             <a
               href="https://audit.automatetheboring.agency/" target="_blank" rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
