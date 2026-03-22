@@ -1,6 +1,6 @@
 # Case Studies
 
-Real results. Real businesses. No fluff.
+Every result on this page came from a real problem we solved.
 
 ---
 

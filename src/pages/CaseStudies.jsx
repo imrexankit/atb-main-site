@@ -436,10 +436,8 @@ export default function CaseStudies() {
               lineHeight: 1.15,
             }}
           >
-            Real results.{" "}
-            <span style={{ color: COLORS.accent }}>Real businesses.</span>
-            <br />
-            No fluff.
+            Problems we have{" "}
+            <span style={{ color: COLORS.accent }}>Solved</span>
           </h1>
           <p
             style={{
