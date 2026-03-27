@@ -17,6 +17,38 @@ const categories = [
     tag: "CATEGORY 01",
     cases: [
       {
+        title: "Built Full-Funnel Attribution & Analytics Engine",
+        industry: "Marketing Technology",
+        tools: "HubSpot, GA4, GSC, Supermetrics, Tableau, CallRail, SQL",
+        problem:
+          "Marketing decisions were fragmented across platforms with no unified view of performance. Leads were coming in, but nobody could confidently answer: what's actually driving revenue?",
+        whatWasDone:
+          "Built a unified marketing intelligence system combining GA4, Google Ads, GSC, and CRM data into one pipeline. Introduced query-level and landing page-level tracking with a custom metric — Click-to-Session Capture Rate — to identify tracking leaks. Automated reporting pipelines using Supermetrics → Google Sheets → Tableau dashboards. Integrated CallRail dynamic number tracking to connect offline calls with ad campaigns.",
+        results: [
+          "Full visibility from keyword → click → session → lead → deal",
+          "Identified tracking gaps (as low as ~8% session capture on key pages)",
+          "Enabled data-backed budget allocation instead of guesswork",
+          "Reduced reporting time from hours to near real-time dashboards",
+        ],
+        quote:
+          "Marketing stopped being 'what feels right' and became 'what prints money.'",
+      },
+      {
+        title: "Built SEO + AEO Strategy Framework (Beyond Traditional SEO)",
+        industry: "Content Strategy / Digital Marketing",
+        tools: "Content Strategy, Search Intelligence, AI Search Understanding",
+        problem:
+          "Traditional SEO thinking ignored how AI models and modern search ecosystems surface information.",
+        whatWasDone:
+          "Developed a framework focused on credible citations and mentions, UGC signals (YouTube, social), and brand presence across trusted domains. Rejected over-optimization tactics and focused on signal credibility to align with modern search and AI discovery mechanisms.",
+        results: [
+          "Future-proof SEO strategy aligned with AI search",
+          "Shift from ranking hacks → authority building",
+          "Better positioning for AI-driven discovery",
+        ],
+        quote: "Not just ranking on Google—existing in the model's memory.",
+      },
+      {
         title: "Grew Marketing-Driven Sales by 38% and Halved ACOS from 18% to 9%",
         industry: "eCommerce",
         tools: "Amazon Ads, Google Analytics, Google Search Console, Power BI, SQL",
@@ -87,15 +119,15 @@ const categories = [
         quote: "Same output. Zero licence fee. The expensive tool was never needed in the first place.",
       },
       {
-        title: "Eliminated 13+ Hours of Manual Work Per Week Across Reporting and Data Entry",
+        title: "Eliminated 100+ Hours of Manual Work Per Week Across Reporting and Data Entry",
         industry: "Services / ERP Operations",
         tools: "Python, Power BI, ERP Automation, Document Processing",
         problem:
-          "13+ hours a week spent on manual reporting and data entry — management reports alone took 6–7 hours to compile.",
+          "100+ hours a week spent on manual reporting and data entry — management reports alone took 6–7 hours to compile.",
         whatWasDone:
           "Automated every manual process: live dashboards replaced compiled reports, scanned documents auto-processed into ERP entries, bank reconciliation automated.",
         results: [
-          "13+ hours of manual work eliminated per week",
+          "100+ hours of manual work eliminated per week",
           "Reporting became real-time instead of retrospective",
           "Data entry errors reduced to near-zero",
           "Team freed to focus on analysis and decision-making — not data wrangling",
@@ -139,6 +171,22 @@ const categories = [
     tag: "CATEGORY 03",
     cases: [
       {
+        title: "Real-Time Lead Monitoring & Sales Alerts System",
+        industry: "Sales Operations",
+        tools: "Slack, Zapier, Pipedrive/CRM, Automation",
+        problem:
+          "Leads were going cold due to delayed follow-ups. No visibility into stale leads or rep activity.",
+        whatWasDone:
+          "Built a Slack-based alert system using Zapier with 48-hour inactivity alerts for stale leads, instant assignment notifications, won deal alerts for ops visibility, and weekly pipeline summaries. Connected CRM activity with Slack channels for real-time visibility across the team.",
+        results: [
+          "Reduced lead leakage due to missed follow-ups",
+          "Increased accountability across sales team",
+          "Faster response times on hot leads",
+          "Centralized communication between marketing and sales",
+        ],
+        quote: "Leads stopped dying quietly in CRMs.",
+      },
+      {
         title: "Replaced Operational Chaos with a Unified Planning Dashboard",
         industry: "Services / Distribution",
         tools: "Custom Dashboard, ERP Integration, Python",
@@ -172,6 +220,22 @@ const categories = [
           "Stronger customer trust and satisfaction",
         ],
         quote: "A simple automation turned order creation into a customer experience moment.",
+      },
+      {
+        title: "Built Marketing → Sales Data Pipeline for Decision Intelligence",
+        industry: "Marketing Operations",
+        tools: "Google Sheets, Supermetrics, Tableau, SQL",
+        problem:
+          "Data existed but was not usable for decision-making. Reports were disconnected and lacked context.",
+        whatWasDone:
+          "Created a structured data model combining GSC (queries, impressions, clicks), GA4 (sessions, behavior), and Google Ads (spend, conversions). Built a Fix / Scale / Monitor labeling system to prioritize actions. Added rolling trend analysis and performance scoring.",
+        results: [
+          "Clear prioritization of high-impact actions",
+          "Identified underperforming pages and campaigns quickly",
+          "Improved decision speed for marketing team",
+          "Replaced reactive analysis with proactive strategy",
+        ],
+        quote: "Data stopped being noise. It became a weapon.",
       },
     ],
   },

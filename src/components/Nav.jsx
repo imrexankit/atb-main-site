@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { COLORS, FONTS } from "../constants";
 
 const navLinks = [
-  { label: "What We Automate", href: "#automate" },
-  { label: "How It Works", href: "#process" },
-  { label: "About", href: "#about" },
+  { label: "What We Automate", href: "/#automate" },
+  { label: "How It Works", href: "/#process" },
+  { label: "About", href: "/#about" },
   { label: "Case Studies", href: "/case-studies", isRoute: true },
 ];
 
