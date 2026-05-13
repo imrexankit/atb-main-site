@@ -33,7 +33,7 @@ export default function About() {
               letterSpacing: "-0.02em",
             }}
           >
-            The team behind Automate The Boring
+            The team behind Let's Automate
           </h2>
           <div
             style={{
@@ -58,7 +58,7 @@ export default function About() {
               smart people wasting hours on work that shouldn&apos;t be done by hand.
             </p>
             <p style={{ margin: 0 }}>
-              That&apos;s why we started Automate The Boring. We identify the inefficiencies,
+              That&apos;s why we started Let's Automate. We identify the inefficiencies,
               the manual work, the processes held together by memory and spreadsheets —
               and we get rid of them. Permanently.
             </p>

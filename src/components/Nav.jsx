@@ -71,7 +71,7 @@ export default function Nav() {
               color: COLORS.bg,
             }}
           >
-            AT
+            LA
           </div>
           <span
             style={{
@@ -82,7 +82,7 @@ export default function Nav() {
               letterSpacing: "-0.02em",
             }}
           >
-            Automate<span style={{ color: COLORS.accent }}>The</span>Boring
+            Let's <span style={{ color: COLORS.accent }}>Automate</span>
           </span>
         </Link>
 
@@ -121,7 +121,7 @@ export default function Nav() {
               );
             })}
             <a
-              href="https://audit.automatetheboring.agency/" target="_blank" rel="noopener noreferrer"
+              href="https://audit.letsautomate.today" target="_blank" rel="noopener noreferrer"
               style={{
                 background: COLORS.accent,
                 color: COLORS.bg,
@@ -272,7 +272,7 @@ export default function Nav() {
               );
             })}
             <a
-              href="https://audit.automatetheboring.agency/" target="_blank" rel="noopener noreferrer"
+              href="https://audit.letsautomate.today" target="_blank" rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
               style={{
                 display: "block",

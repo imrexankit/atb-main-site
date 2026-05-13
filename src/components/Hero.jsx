@@ -142,7 +142,7 @@ export default function Hero() {
         <FadeIn delay={0.4}>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
             <a
-              href="https://audit.automatetheboring.agency/" target="_blank" rel="noopener noreferrer"
+              href="https://audit.letsautomate.today" target="_blank" rel="noopener noreferrer"
               style={{
                 background: COLORS.accent,
                 color: COLORS.bg,

@@ -73,7 +73,7 @@ export default function AuditCTA() {
             Just a conversation about what&apos;s possible.
           </p>
           <a
-            href="https://audit.automatetheboring.agency/" target="_blank" rel="noopener noreferrer"
+            href="https://audit.letsautomate.today" target="_blank" rel="noopener noreferrer"
             style={{
               display: "inline-block",
               background: COLORS.accent,

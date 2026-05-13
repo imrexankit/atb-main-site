@@ -36,14 +36,14 @@ export default function Footer() {
               color: COLORS.bg,
             }}
           >
-            AT
+            LA
           </div>
           <span style={{ fontSize: 14, color: COLORS.textMuted }}>
-            automatetheboring.agency
+            letsautomate.today
           </span>
         </div>
         <div style={{ fontSize: 13, color: COLORS.textDim }}>
-          © 2026 Automate The Boring. All rights reserved.
+          © 2026 Let's Automate. All rights reserved.
         </div>
       </div>
     </footer>
