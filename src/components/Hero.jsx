@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { COLORS, FONTS } from "../constants";
 import FadeIn from "./FadeIn";
 
@@ -166,8 +167,8 @@ export default function Hero() {
             >
               Take the Free Audit
             </a>
-            <a
-              href="#automate"
+            <Link
+              to="/case-studies"
               style={{
                 border: `1px solid ${COLORS.border}`,
                 color: COLORS.text,
@@ -181,16 +182,16 @@ export default function Hero() {
                 background: "transparent",
               }}
               onMouseEnter={(e) => {
-                e.target.style.borderColor = COLORS.accent;
-                e.target.style.color = COLORS.accent;
+                e.currentTarget.style.borderColor = COLORS.accent;
+                e.currentTarget.style.color = COLORS.accent;
               }}
               onMouseLeave={(e) => {
-                e.target.style.borderColor = COLORS.border;
-                e.target.style.color = COLORS.text;
+                e.currentTarget.style.borderColor = COLORS.border;
+                e.currentTarget.style.color = COLORS.text;
               }}
             >
-              See What We Automate
-            </a>
+              Case Studies
+            </Link>
           </div>
         </FadeIn>
       </div>
